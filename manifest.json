@@ -30,12 +30,7 @@
         },
         {
             "matches": ["*://shop.kithnyc.com/*/checkouts/*"],
-            "js": ["jquery-2.0.3.min.js", "billing.js"],
-            "run_at": "document_end"
-        },
-        {
-            "matches": ["*://shop.kithnyc.com/*/checkouts/*"],
-            "js": ["jquery-2.0.3.min.js", "order.js"],
+            "js": ["jquery-2.0.3.min.js", "bill_order.js"],
             "run_at": "document_end"
         }
     ],
