@@ -46,9 +46,9 @@ chrome.storage.local.get(["userInfo", "cl", "card"], function (item) {
 
     if (item.cl) {
         if (item.card == "paypal") {
-            //document.getElementById("gateway-logos").children[0].click();
+            document.getElementById("gateway-logos").children[0].click();
         } else {
-           //document.querySelectorAll("input.button.checkout")[0].click();
+           document.querySelectorAll("input.button.checkout")[0].click();
         }
     }
     $(document).unbind().bind("DOMNodeInserted", function (e) {
