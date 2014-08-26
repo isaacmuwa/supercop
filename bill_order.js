@@ -19,23 +19,13 @@ chrome.storage.local.get(["userInfo", "cl", "card"], function (item) {
         document.getElementById("checkout_shipping_address_country").dispatchEvent(event);
         document.getElementById("checkout_shipping_address_phone").value = userInfo.tel;
         document.getElementById("checkout_shipping_address_province").value = userInfo.state;
-        //document.getElementByName("commit").click();
+        var test=document.getElementByName("commit")
 
 
         console.log('...Order Reached...');
 //        info in common
         document.getElementById("checkout_discount_code").value = userInfo.dcode;
         document.getElementById("checkout_gift_card_code").value = userInfo.gift;
-        /*
-        $(document).unbind().bind("DOMNodeInserted", function (e) {
-            console.log(e.target.id);
-            if (e.target.id == "checkout_buyer_accepts_marketing") {
-                fillcc();
-            }
-        });
-        fillcc()*/
-
-
     } else {
         console.log("auto fill con not work");
     }
@@ -66,6 +56,7 @@ chrome.storage.local.get(["userInfo", "cl", "card"], function (item) {
         document.getElementById("direct-payment").checked = true;
         if (item.cl) {
             //document.getElementByName("complete").click();
+            document.getElementByName("commit").click();
         }
     }
 
