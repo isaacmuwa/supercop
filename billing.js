@@ -4,6 +4,7 @@
 chrome.storage.local.get(["userInfo", "cl", "card"], function (item) {
     var userInfo = item.userInfo;
     if (userInfo != null) {
+        console.log('...Billing Reached...');
         console.log("auto fill begin works");
 //        info in common
         document.getElementById("checkout_email").value = userInfo.email;
@@ -31,4 +32,3 @@ chrome.storage.local.get(["userInfo", "cl", "card"], function (item) {
     }
 
 });
-

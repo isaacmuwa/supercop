@@ -4,6 +4,7 @@
 chrome.storage.local.get(["userInfo", "cl", "card"], function (item) {
     var userInfo = item.userInfo;
     if (userInfo != null) {
+        console.log('...Order Reached...');
 //        info in common
         document.getElementById("checkout_discount_code").value = userInfo.dcode;
         document.getElementById("checkout_gift_card_code").value = userInfo.gift;
@@ -29,4 +30,3 @@ chrome.storage.local.get(["userInfo", "cl", "card"], function (item) {
         }
     }
 });
-
