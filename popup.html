@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <link rel="stylesheet" href="popup.css">
+    <script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="logo"></div>
+    <div class="item_info">
+
+
+        <ul class="list-inline">
+            <li id="shoesize" class="size-title">Shoe Size:</li>
+            <!--<li><input type="text" id="shoes"></li>-->
+            <select id="shoes" class="hat_size">
+                <option value=""></option>
+                <option value="OS">OS</option>
+                <option value="6.5">6.5</option>
+                <option value="7">7</option>
+                <option value="7.5">7.5</option>
+                <option value="8">8</option>
+                <option value="8.5">8.5</option>
+                <option value="9">9</option>
+                <option value="9.5">9.5</option>
+                <option value="10">10</option>
+                <option value="10.5">10.5</option>
+                <option value="11">11</option>
+                <option value="11.5">11.5</option>
+                <option value="12">12</option>
+                <option value="12.5">12.5</option>
+                <option value="13">13</option>
+                <option value="13.5">13.5</option>
+                <option value="40">40</option>
+                <option value="41">41</option>
+                <option value="42">42</option>
+                <option value="43">43</option>
+                <option value="44">44</option>
+                <option value="45">45</option>
+                <option value="46">46</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="2X">2X (clothes)</option>
+                <option value="XXL">XXL (pants)</option>
+            </select>
+        </ul>
+
+
+        <div class="s_area">
+            <div class="keyblock">
+         <span class="small" id="kflabel">KEYWORD FINDER: <input type="checkbox" id="kfswitch"/>
+                 <label for="kfswitch">
+                     <span class="ui"></span>
+                 </label>
+             </span>
+            </div>
+            <div class="kware">
+                <input type="text" id="keyword">
+            </div>
+                 <span class="small">AUTO ADD TO CART: <input type="checkbox" id="if_auto_cart"/>
+                     <label for="if_auto_cart">
+                         <span class="ui"></span>
+                     </label>
+                     <br/>
+                 </span>
+           
+
+
+
+            <span class="small">COMPLETE CHECKOUT: <input type="checkbox" id="if_one_click"/><label
+                    for="if_one_click"><span class="ui"></span></label></span>
+            <button id="sb">Save</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

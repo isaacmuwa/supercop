@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+
+<div class="logo"></div>
+<div class="container">
+<div class="address">
+    <div class="form-group">
+        <label>Full Name:</label>
+        <input id="fname" type="text" class="">
+    </div>
+    <div class="form-group">
+        <label>Email:</label>
+        <input id="email" type="text" class="">
+    </div>
+    <div class="form-group">
+        <label>Telephone:</label>
+        <input id="tel" type="text" class="">
+    </div>
+<!--
+    <div class="form-group">
+        <label>Company:</label>
+        <input id="company" type="text" class="">
+    </div>
+
+///-->
+    <div class="form-group">
+        <label>Address:</label>
+        <input id="street" type="text" class="">
+
+    </div>
+    <div class="form-group">
+        <label></label>
+        <input id="street2" type="text" class="">
+
+    </div>
+    <div class="form-group">
+        <label>Zip Code:</label>
+        <input id="zip" type="text" class="">
+    </div>
+    <div class="form-group">
+        <label>City:</label>
+        <input id="city" type="text" class="">
+    </div>
+    <div class="form-group">
+        <label for="country">Country:</label>
+        <select id="country">
+            <option disabled="disabled" selected="selected" value="">-- Please Select --</option>
+            <option selected="selected" value="United States">United States</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Canada">Canada</option>
+            <option value="France">France</option>
+            <option disabled="disabled" value="">---</option>
+            <option value="Australia">Australia</option>
+            <option value="Austria">Austria</option>
+            <option value="Canada">Canada</option>
+            <option value="Denmark">Denmark</option>
+            <option value="France">France</option>
+            <option value="Germany">Germany</option>
+            <option value="Greece">Greece</option>
+            <option value="Ireland">Ireland</option>
+            <option value="Italy">Italy</option>
+            <option value="Netherlands">Netherlands</option>
+            <option value="Poland">Poland</option>
+            <option value="Singapore">Singapore</option>
+            <option value="Spain">Spain</option>
+            <option value="Sweden">Sweden</option>
+            <option value="Switzerland">Switzerland</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option selected="selected" value="United States">United States</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="state">State/Province:</label>
+        <select id="state"></select>
+    </div>
+
+    </div>
+
+<div class="cc">
+    <div class="form-group">
+        <label>Card:</label>
+        <ul id="card" class="list-inline">
+            <li id="credit" value="credit" class="card">CREDIT</li>
+            <li id="pp" value="paypal" class="card">PAYPAL</li>
+        </ul>
+        <div id="cardInfo" style="display: none">
+            <div class="form-group">
+                <label>Card Number:</label>
+                <input id="c_num" type="text" class=" ">
+            </div>
+              <div class="form-group">
+                <label>Name On Card:</label>
+                <input id="cc_name" type="text" class=" ">
+            </div>
+            <div class="form-group">
+                <label>CVV:</label>
+                <input id="cvv" type="text" class=""></label>
+            </div>
+            <div class="form-group">
+                <label>Expiry [MM/YY]:</label>
+                <input id="exp_month" type="text" class="">
+            </div>
+           
+        </div>
+        <div class="form-group">
+            <label for="dcode">Discount Code:</label>
+            <input id="dcode" type="text">
+        </div>
+        <div class="form-group">
+            <label for="gift">Gift Cards:</label>
+            <input id="gift" type="text">
+        </div>
+
+        </div>
+
+        <div class="save">
+            <button type="button" id="sb">Save Info</button>
+            <button type="button" id="clear" style="display: none">Clear Saved Info</button>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="options.js"></script>
+</body>
+</html>
