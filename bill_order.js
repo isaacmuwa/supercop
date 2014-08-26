@@ -1,7 +1,17 @@
 /**
  * Created by Hank momane.com on 4/18/2014.
  */
+var href = window.location.href;
 chrome.storage.local.get(["userInfo", "cl", "card"], function (item) {
+    if(href.indexOf('checkouts') != -1&&href.indexOf('shipping_method') == -1||href.indexOf('contact_information') == -1){
+        console.log('base');
+    }
+    else if(href.indexOf('checkouts') != -1&&href.indexOf('shipping_method') != -1){
+        console.log('shipping method');
+    }
+    else if(href.indexOf('checkouts') != -1&&href.indexOf('contact_information') != -1){
+        console.log('contact information');
+    }
     var userInfo = item.userInfo;
     if (userInfo != null) {
         console.log('...Billing Reached...');
