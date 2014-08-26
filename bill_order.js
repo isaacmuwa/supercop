@@ -3,6 +3,7 @@
  */
 var href = window.location.href;
 chrome.storage.local.get(["userInfo", "cl", "card"], function (item) {
+    /*
     if(href.indexOf('checkouts') != -1&&href.indexOf('shipping_method') == -1||href.indexOf('contact_information') == -1){
         console.log('base');
     }
@@ -11,7 +12,7 @@ chrome.storage.local.get(["userInfo", "cl", "card"], function (item) {
     }
     else if(href.indexOf('checkouts') != -1&&href.indexOf('contact_information') != -1){
         console.log('contact information');
-    }
+    }*/
     var userInfo = item.userInfo;
     if (userInfo != null) {
         console.log('...Billing Reached...');
