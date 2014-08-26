@@ -29,7 +29,8 @@ chrome.storage.local.get(["userInfo", "cl", "card"], function (item) {
         event.initUIEvent("change", true, true);
         document.getElementById("checkout_shipping_address_country").dispatchEvent(event);
         document.getElementById("checkout_shipping_address_phone").value = userInfo.tel;
-        //document.getElementById("checkout_shipping_address_province").value = userInfo.state;
+        document.getElementById("checkout_shipping_address_province").value = userInfo.state;
+        
         var test=document.getElementByName("commit");
 
 
